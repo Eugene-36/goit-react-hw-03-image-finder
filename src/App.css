@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.App {
+  font-family: Roboto, sans-serif;
+  background-color: aquamarine;
+  color: black;
+}
