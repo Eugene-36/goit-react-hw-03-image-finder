@@ -4,7 +4,7 @@ import s from "../App/App.module.css";
 import Button from "../Button/Button";
 import ImageGallery from "../ImageGallery/ImageGallery";
 
-//import Loader from '../Loader/Loader';
+import Loader from "../Loader/Loader";
 import * as API from "../../services/apiImg";
 // import apiImg from '../../services/apiImg';
 // import shortid from 'shortid';
@@ -60,7 +60,7 @@ class App extends Component {
         {error && <h1>No image found</h1>}
         {/* {isLoading ? <Loader /> : <ImageGallery images={images} />}
         {shouldRenderLoadMoreButton && <Button onClick={this.fetchImg} />} */}
-        {/* {isLoading && <Loader />} */}
+        {isLoading && <Loader />}
         {!isLoading && <ImageGallery images={images} />}
         {shouldRenderLoadMoreButton && <Button onClick={this.fetchImg} />}
       </div>
